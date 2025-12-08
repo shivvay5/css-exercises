@@ -5,6 +5,11 @@ body {
 }
 
 .header {
+  font-size: 32px;
+  font-weight: 900;
+  padding: 16px;
+  display: flex;
+  align-items: center;
   height: 72px;
   background: darkmagenta;
   color: white;
@@ -14,9 +19,13 @@ body {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar {
+  padding-top: 10px;
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
@@ -26,4 +35,44 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Content{
+  display: flex;
+  flex-grow:1;
+}
+.Cards{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 48px;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin:0;
+}
+a{
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+}
+.card{
+  max-width: 200px;
+}
+.sidebar{
+  min-width: 300px;
+  flex-shrink: 0;
+}
+
+li{
+  padding:5px;
 }
